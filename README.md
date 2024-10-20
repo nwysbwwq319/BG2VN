@@ -18,7 +18,7 @@ based on user requirements.
 |------------------|----------------------------------|
 | `N`              |  the number of nodes in the graph |
 | `p`              |  probability of edge generation between ordinary samples under the link_constraint |
-|`mean`<br>`std_dev`|The distance between each of the two distributions follows the gauss distribution N(`mean`,`std_dev`<sup>2</sup>) in horizontal and vertical coordinates |
+|`mean`<br>`std_dev`| distance between each of the two distributions follows the gauss distribution N(`mean`,`std_dev`<sup>2</sup>) in horizontal and vertical coordinates |
 |`interval`        | distance between any two means must not be less than interval|
 |`Link_constraint` | (Optional, default=-1)<br>threshold for edge generation (`link_constraint`) |
 |`Visualization`   |(Optional, default=false)<br> figure 1: Visualize graph of k sets of two-dimensional Gaussian distributed samples<br> figure 2: Visualize graph of  BG<sup>2</sup>VN |
@@ -40,7 +40,7 @@ Two sample figures are given below:
 
 ### Complete function
 ```matlab
- [ vital_idx , adjacency_matrix ]=BG2VN( k , N , p , mean , std_dev , interval , 'Link_constraint' , 'Visualization' ); 
+ [vital_idx,adjacency_matrix]=BG2VN( k , N , p , mean , std_dev , interval , 'Link_constraint' , 'Visualization' ); 
 ```
 
 ### Example of use
