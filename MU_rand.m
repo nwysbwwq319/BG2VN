@@ -10,14 +10,14 @@ else
 
     while flag
    
-        % 生成一个正态分布的随机数 
+        % Generate a normally distributed random number
         random_1 = normrnd(mean, std_dev);
         if rand()>0.5
         random_1=random_1*-1;
     
         end
  
-        % 生成一个正态分布的随机数   
+        % Generate a normally distributed random number
         random_2 = normrnd(mean, std_dev); 
         if rand()>0.5     
             random_2=random_2*-1;
@@ -27,7 +27,7 @@ else
         MU_2=MU_2+random_2();
         flag=false;
         for i=1:iter_gauss
-            if distance(MU_1,MU_2,MU_set(i,1),MU_set(i,2))<interval %3√2 约等于 4.3
+            if distance(MU_1,MU_2,MU_set(i,1),MU_set(i,2))<interval 
                 flag=true;
             end
         end
