@@ -1,3 +1,35 @@
+% ----------------------------------------------------------------------------------------------------------- %
+% BG2VN                                                                                                       %
+%                                                                                                             %
+% BG2VN designed for generating benchmark graphs that are composed of                                         %
+% ground-truth vital nodes. It allows for adjustments to the graph's                                          %
+% heterogeneity and aggregation based on user requirements.                                                   %
+%                                                                                                             %
+%   Input parameters:                                                                                         %
+%       - k:                 the number of vital nodes.                                                       %
+%       - N:                 the number of nodes in the graph.                                                %
+%       - p:                 probability of edge generation between ordinary samples under the link_constraint%
+%       - mean & std_dev:    The distance between the centers of each of the two distributions follows        %
+%                            the gauss distribution in horizontal and vertical coordinates                    %        
+%       - interval:          distance between any two means must not be less than interval                    %     
+%       - 'Link_constraint': (Optional, default=-1) threshold for edge generation                             %
+%       - 'Visualization':   (Optional, default=false)                                                        %
+%                           1.Visualize graph of k sets of two-dimensional Gaussian distributed samples       %       
+%                           2.Visualize graph of BG2VN                                                        %
+%                                                                                                             %
+%   Output variables:                                                                                         %
+%       - vital_idx:        id of the vital node                                                              %               
+%       - adjacency_matrix: the adjacency_matrix of BG2VN                                                     %
+%                                                                                                             %
+% ----------------------------------------------------------------------------------------------------------- %
+%   Example of use:                                                                                           %
+%       [vital_idx,adjacency_matrix]=BG2VN(9,900,0.7,3,1,3,'Link_constraint',1.2,'Visualization',true);       %
+% ----------------------------------------------------------------------------------------------------------- %
+%   Script information:                                                                                       %
+%       - Version:      1.1                                                                                   %
+%       - Author:       Yizhen Wang                                                                           %
+%       - Date:         20/10/2024                                                                            %
+% ----------------------------------------------------------------------------------------------------------- %
 function [vital_idx,adjacency_matrix]=BG2VN(k,N,p,mean,std_dev,interval,varargin)
 
 default_parameter = inputParser;                             % Input parser for functions
