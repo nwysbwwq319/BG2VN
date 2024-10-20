@@ -1,4 +1,6 @@
 # Welcome to BG<sup>2</sup>VN !
+ [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/AbductiveLearning/ABLkit/blob/main/LICENSE)   ![Static Badge](https://img.shields.io/badge/MATLAB-green)
+
 ## Benchmark Graph Generator for Vital Node Recognition
 BG<sup>2</sup>VN is a MATLAB toolbox designed for generating benchmark graphs that are composed of ground-truth vital nodes.
 
