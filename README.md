@@ -6,6 +6,11 @@ BG<sup>2</sup>VN is a MATLAB toolbox designed for generating benchmark graphs th
 
 It provides a standardized evaluation benchmark for vital node mining algorithms and allows for adjustments to the graph's heterogeneity and aggregation
 based on user requirements.
+
+## Paper Information
+
+This repository contains the code accompanying the following paper:
+> BG<sup>2</sup>VN: Benchmark Graph Generator for Vital Node Recognition
 ## Salient features
  - Provides a standard evaluation benchmark for vital node identification algorithms.
  - Allows for the specification of the graph's size and the number of vital nodes.
