@@ -18,7 +18,7 @@
 %                           2.Visualize graph of BG2VN                                                        %
 %                                                                                                             %
 %   Output variables:                                                                                         %
-%       - vital_idx:        index of the vital node                                                              %               
+%       - vital_idx:        index of the vital node                                                           %               
 %       - adjacency_matrix: the adjacency_matrix of BG2VN                                                     %
 %                                                                                                             %
 % ----------------------------------------------------------------------------------------------------------- %
