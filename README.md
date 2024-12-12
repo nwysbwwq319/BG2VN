@@ -51,8 +51,27 @@ Two sample figures are given below:
 ```
 
 ## Install
-You can Install BG<sup>2</sup>VN from github and use the subfolder BG2VN directly in matlab
-```git
-git clone https://github.com/nwysbwwq319/BG2VN.git
-```
+
+**Download the Toolbox**  
+   - Locate the `BG2VN` directory and download the entire subfolder.
+   - Or use the following Git command:
+     ```bash
+     git clone https://github.com/nwysbwwq319/BG2VN.git
+     ```
+ **Add the Toolbox to MATLAB Path**  
+   - Unzip the downloaded folder (if downloaded as a ZIP file).
+   - Open MATLAB.
+   - Add the toolbox folder to the MATLAB path:
+     - Use the MATLAB menu: **Home > Set Path > Add with Subfolders**. Select the unzipped folder.
+     - Alternatively, use the following MATLAB command in the Command Window:
+       ```matlab
+       addpath(genpath('path_to_BG2VN'));
+       savepath;
+       ```
+**Verify Installation & Start Using the Toolbox**  
+   - After adding the toolbox to the MATLAB path, you can verify and use BG<sup>2</sup>VN by running the following command in MATLAB:
+     ```matlab
+     [vital_idx,adjacency_matrix]=BG2VN(9,900,0.7,3,1,3,'Link_constraint',1.2,'Visualization',true); 
+     ```
+
 
