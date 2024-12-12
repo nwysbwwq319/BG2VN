@@ -12,7 +12,7 @@ based on user requirements.
  - Enables customization of the graph's properties by adjusting parameters to modify the graph's heterogeneity and aggregation.
 
 ## Overview
-![image](https://github.com/nwysbwwq319/BG2VN/blob/main/fig/fig1.jpg)
+
 
 ## Usage
 ### Input parameters:
@@ -30,10 +30,10 @@ The length corresponding to the 30th percentile of all distances within a single
 Two sample figures are given below:
 - figure1
   
-![image](https://github.com/nwysbwwq319/BG2VN/blob/main/fig/fig2.png)
+
 - figure2
   
-![image](https://github.com/nwysbwwq319/BG2VN/blob/main/fig/fig3.png)
+
 ### Output variables:
 | Variables        | Functionality        |
 |------------------|----------------------------------|
