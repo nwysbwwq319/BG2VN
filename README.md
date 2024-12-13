@@ -68,7 +68,6 @@ Two sample figures are given below:
      ```
  **Add the Toolbox to MATLAB Path**  
    - Unzip the downloaded folder (if downloaded as a ZIP file).
-   - Open MATLAB.
    - Add the toolbox folder to the MATLAB path:
      - Use the MATLAB menu: **Home > Set Path > Add with Subfolders**. Select the unzipped folder.
      - Alternatively, use the following MATLAB command in the Command Window:
